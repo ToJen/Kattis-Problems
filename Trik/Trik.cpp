@@ -1,6 +1,6 @@
 /**
   @author TOMISIN JENROLA
-  @date   AUG17-AUG-2016
+  @date   17-AUG-2016
 */
 
 #include <iostream>

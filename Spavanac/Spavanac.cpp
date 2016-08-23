@@ -1,3 +1,8 @@
+/**
+  @author TOMISIN JENROLA
+  @date   23-AUG-2016
+*/
+
 #include <iostream>
 #include <ctime>
 

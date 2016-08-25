@@ -1,3 +1,8 @@
+/**
+  @author TOMISIN JENROLA
+  @date   25-AUG-2016
+*/
+
 #include <iostream>
 
 using namespace std;
@@ -5,22 +10,18 @@ using namespace std;
 int main()
 {
 
-	int pos, num, lim=210, curr, sum=0;
-	string s;
-
+	int pos, num, curr, sum=0;
+	char s;
 	cin >> pos >> num;
-	while(cin) {
-		(pos==1) ? pos = 8 : pos--;
+
+	while(sum<210) {
 		cin >> curr >> s;
-		// if(s!="T") {
-			sum += curr;
-		// }
-		if(sum>=lim) {
-			cout << pos << endl;
-			break;
+		sum += curr;
+		if(s=='T' && sum<=210) {
+			pos =  (pos%8) + 1;	// go to next player if correct
 		}	
 	}
-
+	cout << pos << endl;
 
 	return 0;
 }
